@@ -15,6 +15,8 @@ public class ItemsController {
     @Autowired
     private ItemsService service;
 
+
+    // 根据id查找
     @RequestMapping("/findById")
     public  String  findById(Model model){
         Items items = service.findById(1);
